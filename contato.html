@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        /* Arredondar bordas de todos os elementos */
+        * {
+            box-sizing: border-box;
+            border-radius: 10px; /* Ajuste o valor conforme necessário */
+        }
+
+        /* Estilo para o header */
+        header {
+            background-color: #003366; /* Azul escuro */
+            padding: 50px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        header h1 {
+            font-size: 50px;
+            color: #A9D6E5; /* Azul muito claro */
+        }
+
+        /* Estilo para a navegação */
+        nav {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente o conteúdo do nav */
+            margin-top: 20px; /* Espaço superior, ajuste conforme necessário */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Espaçamento entre os itens */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* Cor do texto do botão */
+            font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+            background-color: #00509E; /* Azul para o fundo do botão */
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            border-radius: 5px; /* Cantos arredondados do botão */
+            border: 1px solid #003366; /* Cor da borda do botão */
+            transition: background-color 0.3s, color 0.3s; /* Transição suave para efeitos de hover */
+            display: inline-block; /* Faz com que o link se comporte como um botão */
+        }
+
+        nav ul li a:hover {
+            background-color: #003366; /* Cor de fundo do botão ao passar o mouse */
+            color: #fff; /* Cor do texto do botão ao passar o mouse */
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os itens se movam para a linha abaixo se não houver espaço suficiente */
+            justify-content: space-between; /* Espaça os itens igualmente */
+            padding: 20px;
+            background-color: #1C7ED6; /* Azul claro */
+        }
+
+        .content h1 {
+            font-size: 40px;
+            color: #A9D6E5; /* Azul muito claro */
+            margin-bottom: 10px;
+        }
+
+        .content h2 {
+            font-size: 30px;
+            margin: 20px 0; /* Espaçamento superior e inferior */
+            color: #F0F4F8; /* Cinza claro */
+        }
+
+        .contact-form {
+            background-color: #003366; /* Azul escuro */
+            padding: 30px;
+            color: #F0F4F8; /* Cinza claro */
+            max-width: 600px; /* Limita a largura */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve para destaque */
+            flex: 1;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #A9D6E5; /* Azul muito claro */
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #F0F4F8; /* Cinza claro */
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px; /* Cantos arredondados */
+            box-sizing: border-box;
+        }
+
+        .contact-form input[type="text"], .contact-form input[type="email"] {
+            background-color: #A9D6E5; /* Azul muito claro */
+            color: #003366; /* Azul escuro */
+        }
+
+        .contact-form textarea {
+            background-color: #A9D6E5; /* Azul muito claro */
+            color: #003366; /* Azul escuro */
+            resize: vertical; /* Permite redimensionar verticalmente */
+        }
+
+        .contact-form button {
+            background-color: #00509E; /* Azul médio */
+            color: #F0F4F8; /* Cinza claro */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px; /* Cantos arredondados */
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Transição suave para efeitos de hover */
+        }
+
+        .contact-form button:hover {
+            background-color: #003366; /* Cor de fundo do botão ao passar o mouse */
+        }
+
+        footer {
+            margin: 0;
+            padding: 20px;
+            background-color: #00509E; /* Azul médio */
+            color: #F0F4F8; /* Cinza claro */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="contact-form">
+            <h2>Envie uma Mensagem</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2024 - Thiago Anacleto</p>
+    </footer>
+</body>
+</html>
