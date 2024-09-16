@@ -7,8 +7,8 @@
     <style>
 
         ul {
-            list-style-type: none; /* Remove as bolinhas das listas */
-            padding-left: 0;       /* Remove o padding padrão à esquerda */
+            list-style-type: disc; /* Adiciona bolinhas às listas */
+            padding-left: 20px;   /* Adiciona espaço à esquerda das listas */
         }
 
         /* Arredondar bordas de todos os elementos */
@@ -85,8 +85,8 @@
         main img {
             display: block;
             margin: 0 auto;
-            max-width: 150px;  /* Definindo largura fixa */
-            height: 150px;     /* Definindo altura fixa para ser igual à largura */
+            max-width: 250px;  /* Definindo largura fixa */
+            height: 250px;     /* Definindo altura fixa para ser igual à largura */
             border-radius: 50%; /* Faz a imagem ficar redonda */
             object-fit: cover;  /* Garante que a imagem se ajuste bem dentro do círculo */
         }
@@ -95,13 +95,16 @@
             flex: 1;
             padding: 10px;
             background-color: #A9D6E5; /* Azul muito claro */
-            text-align: center; /* Centraliza o texto e o conteúdo */
+            text-align: left; /* Alinha o texto e o conteúdo à esquerda */
+        }
+
+        aside h3 {
+            text-align: center; /* Centraliza os subtítulos */
         }
 
         aside ul {
-            padding: 0;
-            margin: 0;
-            list-style: none; /* Remove bolinhas ou marcadores */
+            padding-left: 20px; /* Adiciona espaço à esquerda da lista */
+            list-style: disc; /* Adiciona bolinhas à lista */
         }
 
         aside ul li {
@@ -118,7 +121,12 @@
             flex: 1;
             padding: 10px;
             margin-right: 10px;
-            background-color: #F0F4F8; /* Cinza claro */
+            background-color: #1C7ED6; /* Cinza claro */
+            text-align: left; /* Alinha o texto e o conteúdo à esquerda */
+        }
+
+        .hardSkills h3, .softSkills h3 {
+            text-align: center; /* Centraliza os subtítulos */
         }
 
         .softSkills {
