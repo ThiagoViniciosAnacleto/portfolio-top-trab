@@ -50,12 +50,19 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #A9D6E5; /* Cor dos links */
+            color: #fff; /* Cor do texto do botão */
             font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+            background-color: #00509E; /* Azul para o fundo do botão */
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            border-radius: 5px; /* Cantos arredondados do botão */
+            border: 1px solid #003366; /* Cor da borda do botão */
+            transition: background-color 0.3s, color 0.3s; /* Transição suave para efeitos de hover */
+            display: inline-block; /* Faz com que o link se comporte como um botão */
         }
 
         nav ul li a:hover {
-            color: #F0F4F8; /* Cor dos links ao passar o mouse */
+            background-color: #003366; /* Cor de fundo do botão ao passar o mouse */
+            color: #fff; /* Cor do texto do botão ao passar o mouse */
         }
 
         /* Centralizar conteúdo dentro do container */
@@ -89,6 +96,16 @@
             padding: 10px;
             background-color: #A9D6E5; /* Azul muito claro */
             text-align: center; /* Centraliza o texto e o conteúdo */
+        }
+
+        aside ul {
+            padding: 0;
+            margin: 0;
+            list-style: none; /* Remove bolinhas ou marcadores */
+        }
+
+        aside ul li {
+            margin: 10px 0; /* Espaçamento entre os itens da lista */
         }
 
         /* Flex para hard e soft skills */
