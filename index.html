@@ -48,18 +48,21 @@
         }
 
         main {
-        flex: 3;
-        padding: 10px;
-        background-color: white;
-        margin-right: 20px;
-        text-align: center; /* Centraliza o texto no main */
+            flex: 3;
+            padding: 10px;
+            background-color: white;
+            margin-right: 20px;
+            text-align: center; /* Centraliza o texto no main */
         }
         main img {
-        display: block;      /* Necessário para que margin auto funcione */
-        margin: 0 auto;      /* Centraliza a imagem horizontalmente */
-        max-width: 100%;     /* Garante que a imagem não ultrapasse a largura */
-        height: auto;        /* Mantém a proporção da imagem */
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;  /* Definindo largura fixa */
+            height: 150px;     /* Definindo altura fixa para ser igual à largura */
+            border-radius: 50%; /* Faz a imagem ficar redonda */
+            object-fit: cover;  /* Garante que a imagem se ajuste bem dentro do círculo */
         }
+
 
         aside {
             flex: 1;
