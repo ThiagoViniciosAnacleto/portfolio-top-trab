@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
+    <title>Sobre Mim</title>
     <style>
-
         /* Arredondar bordas de todos os elementos */
         * {
             box-sizing: border-box;
@@ -60,32 +59,34 @@
             color: #fff; /* Cor do texto do botão ao passar o mouse */
         }
 
-        
         .content {
             display: flex;
-            flex: 3;
-            padding: 10px;
+            flex-direction: column; /* Alinha itens verticalmente */
+            padding: 20px;
             background-color: #1C7ED6; /* Azul claro */
-            margin-right: 0px;
-            text-align: center; /* Centraliza o texto no main */
+            text-align: center; /* Centraliza o texto */
         }
 
         .content h1 {
             font-size: 40px;
+            margin-bottom: 10px;
         }
 
         .content h2 {
             font-size: 30px;
-            border-color: #1C7ED6;
+            margin: 20px 0; /* Espaçamento superior e inferior */
+            color: #F0F4F8; /* Cor do subtítulo */
         }
 
         .content .texto {
-            background-color: #F0F4F8;
-            font-size: 20px;
+            background-color: #F0F4F8; /* Cinza claro para o fundo do texto */
+            padding: 20px;
+            font-size: 18px; /* Tamanho da fonte ajustado */
+            color: #333; /* Cor do texto */
+            text-align: left; /* Alinha o texto à esquerda */
+            max-width: 800px; /* Limita a largura do texto */
+            margin: 0 auto; /* Centraliza o bloco de texto */
         }
-
-
-
 
         footer {
             margin: 0;
@@ -109,9 +110,8 @@
 
     <div class="content">
         <main>
-        <h1>Sobre Thiago Anacleto</h1>
-        
-        <h2>Minha Jornada Profissional</h2>
+            <h1>Sobre Thiago Anacleto</h1>
+            <h2>Minha Jornada Profissional</h2>
             <div class="texto">
                 <p>Olá! Meu nome é Thiago Anacleto e sou um estudante de Engenharia de Software com um background em Mecatrônica. Tenho uma paixão por tecnologia e inovação, o que me levou a trabalhar em projetos desafiadores e a buscar soluções criativas para problemas complexos. Com uma sólida formação em sistemas embarcados e automação, além de experiência prática em suporte técnico e desenvolvimento de soluções, estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente. Agradeço por visitar meu portfólio e estou ansioso para compartilhar mais sobre minhas experiências e habilidades.</p>
             </div>
