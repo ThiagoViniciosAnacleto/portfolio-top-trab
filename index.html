@@ -6,13 +6,15 @@
     <title>Meu Portfólio</title>
     <style>
 
-        *{
-            border-radius: 20px;
-        }
-
         ul {
             list-style-type: none; /* Remove as bolinhas das listas */
             padding-left: 0;       /* Remove o padding padrão à esquerda */
+        }
+
+        /* Arredondar bordas de todos os elementos */
+        * {
+            box-sizing: border-box;
+            border-radius: 10px; /* Ajuste o valor conforme necessário */
         }
 
         /* Estilo para o header */
@@ -29,23 +31,31 @@
         }
 
         /* Estilo para a navegação */
+        nav {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente o conteúdo do nav */
+            margin-top: 20px; /* Espaço superior, ajuste conforme necessário */
+        }
+
         nav ul {
-            background-color: #00509E; /* Azul médio */
+            display: flex;
             list-style: none;
-            margin: 0px;
-            padding: 10px;
-            text-align: right;
-            font-size: 20px;
+            padding: 0;
+            margin: 0;
         }
 
         nav ul li {
-            display: inline-block;
-            margin-left: 30px;
+            margin: 0 15px; /* Espaçamento entre os itens */
         }
 
         nav ul li a {
             text-decoration: none;
-            color: #F0F4F8; /* Cinza claro */
+            color: #F0F4F8; /* Cor dos links */
+            font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+        }
+
+        nav ul li a:hover {
+            color: #003366; /* Cor dos links ao passar o mouse */
         }
 
         /* Centralizar conteúdo dentro do container */
