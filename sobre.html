@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <style>
+
+        /* Arredondar bordas de todos os elementos */
+        * {
+            box-sizing: border-box;
+            border-radius: 10px; /* Ajuste o valor conforme necessário */
+        }
+
+        /* Estilo para o header */
+        header {
+            background-color: #003366; /* Azul escuro */
+            padding: 50px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        header h1 {
+            font-size: 50px;
+            color: #A9D6E5; /* Azul muito claro */
+        }
+
+        /* Estilo para a navegação */
+        nav {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente o conteúdo do nav */
+            margin-top: 20px; /* Espaço superior, ajuste conforme necessário */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Espaçamento entre os itens */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* Cor do texto do botão */
+            font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+            background-color: #00509E; /* Azul para o fundo do botão */
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            border-radius: 5px; /* Cantos arredondados do botão */
+            border: 1px solid #003366; /* Cor da borda do botão */
+            transition: background-color 0.3s, color 0.3s; /* Transição suave para efeitos de hover */
+            display: inline-block; /* Faz com que o link se comporte como um botão */
+        }
+
+        nav ul li a:hover {
+            background-color: #003366; /* Cor de fundo do botão ao passar o mouse */
+            color: #fff; /* Cor do texto do botão ao passar o mouse */
+        }
+
+        
+        .content {
+            display: flex;
+            flex: 3;
+            padding: 10px;
+            background-color: #1C7ED6; /* Azul claro */
+            margin-right: 0px;
+            text-align: center; /* Centraliza o texto no main */
+        }
+
+        .content h1 {
+            font-size: 40px;
+        }
+
+        .content h2 {
+            font-size: 30px;
+            border-color: #1C7ED6;
+        }
+
+        .content .texto {
+            background-color: #F0F4F8;
+            font-size: 20px;
+        }
+
+
+
+
+        footer {
+            margin: 0;
+            padding: 20px;
+            background-color: #00509E; /* Azul médio */
+            color: #F0F4F8; /* Cinza claro */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sobre Mim</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <main>
+        <h1>Sobre Thiago Anacleto</h1>
+        
+        <h2>Minha Jornada Profissional</h2>
+            <div class="texto">
+                <p>Olá! Meu nome é Thiago Anacleto e sou um estudante de Engenharia de Software com um background em Mecatrônica. Tenho uma paixão por tecnologia e inovação, o que me levou a trabalhar em projetos desafiadores e a buscar soluções criativas para problemas complexos. Com uma sólida formação em sistemas embarcados e automação, além de experiência prática em suporte técnico e desenvolvimento de soluções, estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente. Agradeço por visitar meu portfólio e estou ansioso para compartilhar mais sobre minhas experiências e habilidades.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Copyright © 2024 - Thiago Anacleto</p>
+    </footer>
+</body>
+</html>
