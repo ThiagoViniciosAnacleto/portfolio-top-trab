@@ -30,10 +30,10 @@ Análise sobre como a automação e a Inteligência Artificial estão transforma
 
 Você pode me encontrar e entrar em contato através das seguintes plataformas:
 
-- [LinkedIn](https://www.linkedin.com/in/seu-perfil)
-- [Instagram](https://www.instagram.com/seu-perfil)
-- [WhatsApp](https://wa.me/seu-numero)
-- [GitHub](https://github.com/seu-usuario)
+- [LinkedIn](https://www.linkedin.com/in/thiagoviniciosanacleto/)
+- [Instagram](https://www.instagram.com/th_509e/)
+- [WhatsApp](https://wa.me/41997087649)
+- [GitHub](https://github.com/ThiagoViniciosAnacleto)
 
 Obrigado por visitar meu portfólio. Se você tiver alguma dúvida ou quiser discutir uma colaboração, sinta-se à vontade para entrar em contato!
 
