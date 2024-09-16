@@ -79,14 +79,18 @@
             color: #F0F4F8; /* Cinza claro */
         }
 
-        .contact-form {
+        .contact-form, .social-links {
             background-color: #003366; /* Azul escuro */
             padding: 30px;
             color: #F0F4F8; /* Cinza claro */
             max-width: 600px; /* Limita a largura */
             border-radius: 10px; /* Cantos arredondados */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve para destaque */
+        }
+
+        .contact-form {
             flex: 1;
+            margin-right: 5px; /* Espaçamento entre o formulário e a seção de links */
         }
 
         .contact-form h2 {
@@ -135,6 +139,40 @@
             background-color: #003366; /* Cor de fundo do botão ao passar o mouse */
         }
 
+        .social-links {
+            flex: 1;
+        }
+
+        .social-links h3 {
+            color: #A9D6E5; /* Azul muito claro */
+            margin-bottom: 20px;
+            text-align: center; /* Centraliza o título */
+        }
+
+        .social-links ul {
+            list-style: none; /* Remove marcadores das listas */
+            padding: 0;
+        }
+
+        .social-links ul li {
+            margin: 10px 0; /* Espaçamento entre os itens */
+        }
+
+        .social-links ul li a {
+            color: #F0F4F8; /* Cinza claro */
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s; /* Transição suave para efeitos de hover */
+        }
+
+        .social-links ul li a:hover {
+            background-color: #1C7ED6; /* Azul claro ao passar o mouse */
+            color: #F0F4F8; /* Cinza claro */
+        }
+
         footer {
             margin: 0;
             padding: 20px;
@@ -171,6 +209,16 @@
                 
                 <button type="submit">Enviar</button>
             </form>
+        </div>
+        
+        <div class="social-links">
+            <h3>Encontre-me em:</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/seu-perfil" target="_blank">Instagram</a></li>
+                <li><a href="https://wa.me/seu-numero" target="_blank">WhatsApp</a></li>
+                <li><a href="https://github.com/seu-usuario" target="_blank">GitHub</a></li>
+            </ul>
         </div>
     </div>
 
