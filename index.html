@@ -23,7 +23,7 @@
             background-color: brown;
             list-style: none;
             margin: 0px;
-            padding: 10px; /* Reduzido o padding */
+            padding: 10px;
             text-align: right;
             font-size: 20px;
         }
@@ -38,18 +38,27 @@
             color: #000;
         }
 
-        /* Estilo para o main e aside */
+        /* Centralizar conteúdo dentro do container */
         .container {
             background-color: green;
             display: flex;
             padding: 20px;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center;     /* Centraliza verticalmente */
         }
 
         main {
-            flex: 3;
-            padding: 10px;
-            background-color: white;
-            margin-right: 20px;
+        flex: 3;
+        padding: 10px;
+        background-color: white;
+        margin-right: 20px;
+        text-align: center; /* Centraliza o texto no main */
+        }
+        main img {
+        display: block;      /* Necessário para que margin auto funcione */
+        margin: 0 auto;      /* Centraliza a imagem horizontalmente */
+        max-width: 100%;     /* Garante que a imagem não ultrapasse a largura */
+        height: auto;        /* Mantém a proporção da imagem */
         }
 
         aside {
@@ -58,12 +67,30 @@
             background-color: yellow;
         }
 
-        footer{
+        /* Flex para hard e soft skills */
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hardSkills, .softSkills {
+            flex: 1;
+            padding: 10px;
+            margin-right: 10px;
+            background-color: #f0f0f0;
+        }
+
+        .softSkills {
+            margin-right: 0;
+        }
+
+        footer {
             margin: 0;
             padding: 20px;
             background-color: greenyellow;
             text-align: center;
         }
+
     </style>
 </head>
 <body>
@@ -82,17 +109,20 @@
         <main>
             <h2>Thiago Anacleto</h2>
             <img src="img/img.jpeg" alt="img">
-            <div class="hardSkills">
-                <h3>Hard Skills</h3>
+
+            <div class="skills-container">
+                <div class="hardSkills">
+                    <h3>Hard Skills</h3>
                     <ul>
                         <li>Graduação em Engenharia de Software ( Em andamento )</li>
                         <li>Curso Técnico em Mecatrônica</li>
                         <li>Conhecimentos em gestão de projetos</li>
                         <li>Inglês Intermediário</li>
                     </ul>
-            </div>            
-            <div class="softSkills">
-                <h3>Soft Skills</h3>
+                </div>
+                
+                <div class="softSkills">
+                    <h3>Soft Skills</h3>
                     <ul>
                         <li>Resolução de problemas</li>
                         <li>Foco em resultados</li>
@@ -100,16 +130,23 @@
                         <li>Colaboração</li>
                         <li>Flexibilidade</li>
                     </ul>
+                </div>
             </div>
         </main>
+
         <aside>
             <h3>Projetos</h3>
-                <ul>
-                    <li>Grade de Proteção para Robô Industrial (NR12)</li>
-                    <li>Mini Carro Telecomandado por Controle com suporte para câmeras ( C++ )</li>
-                    <li>Cofre digital de uso pessoal ( C++ )</li>
-                    <li>Desenvolvimento de Próteses e Órtese de Baixo Custo ( C++ ), Sensores, 3D.</li>
-                </ul>
+            <ul>
+                <li>Grade de Proteção para Robô Industrial (NR12)</li>
+                <li>Mini Carro Telecomandado por Controle com suporte para câmeras ( C++ )</li>
+                <li>Cofre digital de uso pessoal ( C++ )</li>
+                <li>Desenvolvimento de Próteses e Órtese de Baixo Custo ( C++ ), Sensores, 3D.</li>
+            </ul>
         </aside>
     </div>
+
+    <footer>
+        <p>Copyright © 2024 - Thiago Anacleto</p>
+    </footer>
 </body>
+</html>
